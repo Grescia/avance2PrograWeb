@@ -52,7 +52,7 @@ export default function RootLayout({ children }) {
                 </div>
             </nav>
             <div className={`${styles.fullMain} d-flex`}>
-                <Sidebar name={`dashboard`} />
+                <Sidebar name={"citas"} />
                 {children}
             </div>
         </div>

@@ -6,9 +6,7 @@ import { useRouter } from 'next/navigation';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faUserLock } from '@fortawesome/free-solid-svg-icons'
 
-
-
-const Login = () => {
+export default function Login() {
     const [usuarios, setUsuarios ] = useState([]);
     const [sesion , setSesion] = useState({});
     const [usuario , setUsuario] = useState('');
@@ -44,9 +42,10 @@ const Login = () => {
             localStorage.setItem('usuarios', JSON.stringify(users))
             setUsuarios(users);
         }
-    }, []);
+    }, 
+    []);
 
-    
+
     const submitForm = (event) => {
         event.preventDefault();
         var usuario = document.getElementById('usuario').value;
@@ -83,8 +82,11 @@ const Login = () => {
     return (
         <main className={styles.main}>
             <div className="card">
+                <div>
+                    <h1>Sistemas de Citas para Atención de Citas</h1>
+                </div>
                 <div className='py-3 px-3 d-flex items-align-center justify-content-center'>
-                    <FontAwesomeIcon icon={ faUserLock } style={{fontSize: '10em'}} />
+                    <FontAwesomeIcon icon={ faUserLock } style={{fontSize: '20em'}} />
                 </div>
                 <div className="card-body pt-0 pb-5 px-3">
                     <form method="post" onSubmit={submitForm}>
@@ -131,4 +133,3 @@ const Login = () => {
         </main>
     )
 }
-export default Login

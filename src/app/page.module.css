@@ -1,7 +1,6 @@
 .fullMain{
   min-height: calc(100vh - 56px); 
   max-height: calc(100vh - 56px); 
-  
 }
 .navBar{
   width: 200px;
@@ -33,8 +32,7 @@
 }
 
 .tabs{
-  border-bottom: solid 1px var(#6c25be);
-
+  border-bottom: solid 1px var(--bs-secondary-bg);
   border-left: solid 1px var(--bs-secondary-bg);
   border-right: solid 1px var(--bs-secondary-bg);
   padding: 20px;
@@ -214,9 +212,6 @@
     justify-content: center;
     position: fixed;
     width: 100%;
-  }
-.guardar{
-  background-color: #BB6ECE;
   }
 
   .description p {
