@@ -1,0 +1,26 @@
+.Contenedor{
+    display: flex;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.button{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.contenedorsito{
+    padding-right: 25px;
+}
+
+.cont{
+    padding-left: 20px;
+}
+
+.text-justify{
+    text-align: justify;
+}
+
+.Contenedor2{
+    padding-left: 50px;
+}
